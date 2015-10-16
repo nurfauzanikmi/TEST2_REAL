@@ -62,23 +62,6 @@ public class TEST2_REAL{
             }
             System.out.println(sb.toString());
             
-            //First Request - IPV6
-            /*
-            System.out.println(System.getProperty("java.home"));
-            System.setProperty("java.net.preferIPv6Addresses", "true");
-            System.out.println(System.getProperty("java.net.preferIPv6Addresses"));
-           */
-            //System.out.println("Check IP address version :" + ip.isLinkLocalAddress());
-            
-            InetAddress[] addr = InetAddress.getAllByName(ip.getHostName());
-            for (InetAddress ipv6 : addr) {
-                if (ipv6 instanceof Inet6Address) {
-                    System.out.println("ipv6 address is " + ipv6.getHostAddress());
-                }
-                else
-                    System.out.println("ipv4 address is " + ipv6.getHostAddress());
-            }
-            
             //Threads
             /*Threads Feature
                 Counting Threads, Run, Start, Join, Sleep Thread
